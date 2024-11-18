@@ -1,143 +1,139 @@
-Custodia-Detector - Version 1.0
-By: @LeZinzin
+![CustodiaDetector](https://github.com/user-attachments/assets/81d516fd-21ca-4e6b-8212-b44c86244b76)
 
-Github: https://github.com/LeZinzin
-Thanks for using my tools!
-Overview
 
-Custodia-Detector is a Python-based tool designed to scan files for suspicious patterns and potentially malicious code. It can detect a wide range of suspicious code patterns in various types of files including Python, JavaScript, PowerShell, Batch, PHP, and HTML.
+---
 
-This tool is useful for developers, security analysts, or anyone who wants to ensure that their codebase is free of harmful code snippets, potentially malicious operations, or exploits.
-Features
 
-    Multi-language detection: Scans Python, JavaScript, PowerShell, Batch, PHP, and HTML files for suspicious patterns.
-    Customizable patterns: Easily update and add custom patterns to extend the scanner's functionality.
-    Log generation: Creates a detailed log file with scan results for further analysis.
-    Cross-platform compatibility: Runs on both Windows and Linux systems.
-    Clean output: The scanner provides clear outputs and generates logs that are easy to read.
+# 🌟 **Custodia-Detector - Version 1.0**  
+*By: @LeZinzin*  
 
-Requirements
+[GitHub Repository](https://github.com/LeZinzin)  
+Thanks for using my tool! 🙌
 
-    Python 3.x
-    This tool is written in Python, so you'll need Python installed on your system.
+---
 
-    Libraries required:
-    The following Python libraries are used:
-        re (Regular Expressions)
-        os
-        time
-        unicodedata
-        datetime
+### 📌 **Overview**  
+**Custodia-Detector** is a Python-based tool designed to scan files for suspicious patterns and potentially malicious code. It supports multiple file types, including Python, JavaScript, PowerShell, Batch, PHP, and HTML, making it an essential tool for developers, security analysts, and anyone wanting to ensure their code is free from harmful snippets or exploits.
 
-If you're missing any of these libraries, you can install them using pip:
+---
 
-pip install -r requirements.txt
+### 🚀 **Features**  
+- **Multi-Language Support:** Detects suspicious code in Python, JavaScript, PowerShell, Batch, PHP, and HTML files.
+- **Customizable Patterns:** Easily extend the scanner by adding custom patterns to match your needs.
+- **Detailed Logs:** Generates a detailed log file with results for further analysis.
+- **Cross-Platform:** Works on both **Windows** and **Linux**.
+- **Clean Output:** Provides clear, human-readable outputs and logs.
 
-Installation
+---
 
-    Clone the repository: You can download the project from GitHub using git clone:
+### 🧑‍💻 **Usage**
 
-git clone https://github.com/LeZinzin/Custodia-Detector.git
+#### 1. **Running the Tool**
+- **Windows:**  
+  Open Command Prompt, navigate to the folder with the script, and run:
+  ```bash
+  python Custodia-Detector.py
+  ```
 
-Install dependencies: Make sure you have the required Python libraries. If you are using requirements.txt, you can install them using:
+- **Linux:**  
+  Open a terminal, navigate to the folder, and run:
+  ```bash
+  python3 Custodia-Detector.py
+  ```
 
-    pip install -r requirements.txt
+#### 2. **Scanning Files**  
+When prompted, input the full path of the file you want to scan:
+```plaintext
+/path/to/your/file.py
+```
 
-    Place Custodia-Detector.py and the script in the same folder
-    Ensure the script Custodia-Detector.py exists in the same directory where you run the batch or Python command.
+The tool will process the file and check for suspicious patterns based on its type (e.g., Python, JavaScript, PHP). If anything is detected, a log file will be created with details about the suspicious code.
 
-Usage
-Running the Tool
+---
 
-    Windows:
-        Open a Command Prompt and navigate to the folder containing the script.
-        Run the batch file run.bat or execute the following command:
+### 🔍 **File Types Supported**
 
-    python Custodia-Detector.py
+- **Python (.py):** Detects dangerous functions like `eval()`, `exec()`, `subprocess`, `os.system()`, and more.
+- **JavaScript (.js):** Identifies `eval()`, `XMLHttpRequest`, and other risky client-side functions.
+- **PowerShell (.ps1):** Scans for malicious PowerShell commands like `Invoke-Expression`, `Start-Process`, etc.
+- **Batch (.bat):** Detects harmful commands like `powershell -nop`, `cmd.exe /c`, and others.
+- **PHP (.php):** Flags dangerous PHP functions such as `eval()`, `exec()`, `base64_decode()`.
+- **HTML (.html):** Searches for embedded JavaScript or suspicious `src` attributes.
 
-Linux:
+---
 
-    Open a terminal and navigate to the folder where the script is located.
-    Run the Python script directly:
+### 📊 **Example Output**
 
-        python3 Custodia-Detector.py
+When suspicious code is found, you’ll see an output like this:
 
-Scanning Files
-
-When you run the tool, you will be prompted to enter the file path of the file you wish to scan.
-
-    Enter the full path to the file you want to scan, for example:
-
-    /path/to/your/file.py
-
-    The tool will then process the file and check for suspicious patterns based on the type of file (e.g., Python, JavaScript, PHP).
-
-    Output:
-        If suspicious patterns are found, the tool will generate a log file in the logs directory.
-        If no suspicious patterns are found, it will let you know that the file is clean.
-
-File Types Supported
-
-    Python (.py files): Searches for dangerous functions like eval(), exec(), subprocess, os.system(), and more.
-    JavaScript (.js files): Scans for eval(), XMLHttpRequest, and other dangerous client-side functions.
-    PowerShell (.ps1 files): Looks for malicious PowerShell commands such as Invoke-Expression, Start-Process, etc.
-    Batch (.bat files): Detects potentially harmful commands like powershell -nop, cmd.exe /c, and more.
-    PHP (.php files): Scans for potentially dangerous PHP functions like eval(), exec(), and base64_decode().
-    HTML (.html files): Looks for embedded JavaScript or suspicious src attributes.
-
-Example Output
-
-When the tool detects suspicious code, it will output the following message:
-
+```plaintext
 [!] Suspicious pattern found at line 23: eval(
 [+] Matches: ['eval(somePotentiallyHarmfulCode());']
+```
 
-This information will also be saved in a log file within the logs/ directory for further inspection.
-Log Files
+This will also be saved in a log file for later inspection.
 
-The tool will create a log file in a folder called logs/ inside the working directory. Each log file will contain detailed information about:
+---
 
-    The file scanned
-    Timestamp of the scan
-    Suspicious patterns found
-    Exact matches and the line numbers where they were found
+### 📝 **Log Files**
 
-Log file name format:
-<filename>_scan_<timestamp>.log
+The tool generates a log file inside the **logs/** directory. Each log includes:
+- **File Scanned**  
+- **Timestamp**  
+- **Suspicious Patterns Found**  
+- **Matches and Line Numbers**
 
-Example log file content:
+**Log File Format:**  
+`<filename>_scan_<timestamp>.log`
 
-By @LeZinzin - Version 1.0
-Github: https://github.com/LeZinzin
+Example log content:
+
+```plaintext
+By @LeZinzin - Version 1.0  
+Github: https://github.com/LeZinzin  
 Thanks for using my tools!
 
-CustodiaScan results for /path/to/your/file.py
+CustodiaScan results for /path/to/your/file.py  
 CustodiaTimestamp: 2024-11-18 10:20:30
 
 [!] Suspicious pattern found at line 23: eval(
 [+] Matches: ['eval(somePotentiallyHarmfulCode());']
+```
 
-Troubleshooting
+---
 
-    Python not found:
-    If the tool can't find Python in your system PATH, please ensure Python is installed and added to the system PATH environment variable.
+### ⚙️ **Troubleshooting**
 
-    Missing file:
-    Ensure the file you're trying to scan exists in the specified location. If the file is missing, the tool will prompt you with an error.
+- **Python Not Found:**  
+  Ensure Python is installed and added to your system's PATH.
+  
+- **Missing File:**  
+  Double-check the file path you're trying to scan. The tool will alert you if the file is missing.
 
-    Permissions issue:
-    On Linux, ensure the script has permission to execute and access the file you want to scan. You can adjust permissions using:
+- **Permissions Issue (Linux):**  
+  If you encounter permission issues, run:
+  ```bash
+  chmod +x Custodia-Detector.py
+  ```
 
-    chmod +x Custodia-Detector.py
+---
 
-License
+### 📑 **License**  
+This project is open-source under the MIT License. See the LICENSE file for more details.
 
-This project is open-source and available under the MIT License. See the LICENSE file for more details.
-Credits
+---
 
-    Developed by @LeZinzin
-    Inspired by the need for easier detection of potentially malicious code in various languages.
+### 🙏 **Credits**  
+- Developed by @LeZinzin  
+- Inspired by the need for efficient detection of potentially malicious code across multiple languages.
 
-Contributing
+---
 
-Feel free to open issues and pull requests if you'd like to contribute to the project or suggest new features. Contributions are always welcome!
+### 💬 **Contributing**  
+Feel free to contribute by opening issues or submitting pull requests. Your input and suggestions are always welcome!  
+
+---
+
+**Enjoy using Custodia-Detector!** 🎉
+
+---
