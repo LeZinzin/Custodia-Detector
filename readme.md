@@ -5,9 +5,9 @@
 
 
 # 🌟 **Custodia-Detector - Version 1.0**  
-*By: @LeZinzin*  
+*By: @Asterfion*  
 
-[GitHub Repository](https://github.com/LeZinzin)  
+[GitHub Repository](https://github.com/Asterfion)  
 Thanks for using my tool! 🙌
 
 ---
@@ -89,8 +89,8 @@ The tool generates a log file inside the **logs/** directory. Each log includes:
 Example log content:
 
 ```plaintext
-By @LeZinzin - Version 1.0  
-Github: https://github.com/LeZinzin  
+By @Asterfion - Version 1.0  
+Github: https://github.com/Asterfion  
 Thanks for using my tools!
 
 CustodiaScan results for /path/to/your/file.py  
@@ -124,7 +124,7 @@ This project is open-source under the MIT License. See the LICENSE file for more
 ---
 
 ### 🙏 **Credits**  
-- Developed by @LeZinzin  
+- Developed by @Asterfion  
 - Inspired by the need for efficient detection of potentially malicious code across multiple languages.
 
 ---
