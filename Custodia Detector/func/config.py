@@ -1,4 +1,4 @@
-# By @LeZinzin - Version 1.0 
+# By @Asterfion- Version 1.0 
 # Github : https://github.com/LeZinzin
 # Thanks for using my tools !
 
@@ -46,7 +46,7 @@ def CustodiaCreator():
     |If a malicious pattern is found, it will log the results and attempt to    |
     |automatically open the log file for you.                                   |
     |                                                                           |
-    |GitHub: https://github.com/LeZinzin                                        |
+    |GitHub: https://github.com/Asterfion                                       |
     |___________________________________________________________________________|
 {Custodia.Reset}"""
     
