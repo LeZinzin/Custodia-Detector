@@ -1,4 +1,4 @@
-![CustodiaDetector](https://github.com/user-attachments/assets/81d516fd-21ca-4e6b-8212-b44c86244b76)
+![image](https://github.com/user-attachments/assets/e9b794ef-f7b1-4d73-8060-b99ae79c50c7)
 
 
 ---
