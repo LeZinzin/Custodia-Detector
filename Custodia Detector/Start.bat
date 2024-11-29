@@ -35,5 +35,4 @@ if %ERRORLEVEL% EQU 0 (
     echo [!] There was an error executing the script.
 )
 
-:: Pause at the end to allow the user to read the output
 pause
