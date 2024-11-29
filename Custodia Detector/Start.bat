@@ -1,7 +1,7 @@
 @echo off
-title Custodia-Detector by @Asterfion- Version 1.0
+title Custodia-Detector by @Asterfion - Version 1.0
 echo.
-echo By @Asterfion- Version 1.0
+echo By @Asterfion - Version 1.0
 echo Github: https://github.com/LeZinzin
 echo Thanks for using my tools!
 echo.
