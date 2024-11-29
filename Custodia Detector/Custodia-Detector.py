@@ -218,8 +218,8 @@ def create_log_file(file_path, log_entries):
     
     try:
         with open(log_file_name, 'w', encoding='utf-8') as log_file:
-            log_file.write(f"""By @Asterfion- Version 1.0 
-Github : https://github.com/LeZinzin
+            log_file.write(f"""By @Asterfion - Version 1.0 
+Github : https://github.com/Asterfion
 Thanks for using my tools !\n\n""")
             log_file.write(f"CustodiaScan results for {file_path}\n")
             log_file.write(f"CustodiaTimestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
