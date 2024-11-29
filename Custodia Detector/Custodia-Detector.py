@@ -1,5 +1,5 @@
 # By @Asterfion - Version 1.0 
-# Github : https://github.com/LeZinzin
+# Github : https://github.com/Asterfion
 # Thanks for using my tools !
 
 import re
