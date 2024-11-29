@@ -1,5 +1,5 @@
 # By @Asterfion- Version 1.0 
-# Github : https://github.com/LeZinzin
+# Github : https://github.com/Asterfion
 # Thanks for using my tools !
 
 import time 
@@ -30,7 +30,7 @@ class Custodia():
 
 def CustodiaCreator():
     banner = f"""{Custodia.Yellow}
-                                [By LeZinzin]
+                                [By Asterfion]
     _____________________________________________________________________________
     |This tool scans files for suspicious patterns and potential malicious code,| 
     |including backdoors, dual hooks, obfuscation techniques, and various types | 
